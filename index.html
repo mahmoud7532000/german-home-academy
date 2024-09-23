@@ -9,37 +9,36 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f9;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            direction: rtl; /* لضبط اتجاه النصوص إلى اليمين */
+            min-height: 100vh;
+            direction: rtl;
         }
         .container {
             background-color: #ffffff;
-            padding: 30px;
+            padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
+            max-width: 90%; /* استخدام نسبة مئوية لتلائم الشاشة */
+            width: 600px;
             text-align: center;
+            box-sizing: border-box;
         }
         h1 {
             font-size: 28px;
             color: #333;
             margin-bottom: 20px;
             border-bottom: 2px solid #ffcc00;
-            display: inline-block;
             padding-bottom: 10px;
             text-align: center;
-            width: 100%;
         }
         img {
-            display: block; /* لضمان ظهور الشعار في كتلة مستقلة */
-            margin: 0 auto 20px auto; /* لضبط المسافات حول الشعار */
-            max-width: 350px; /* تقليل حجم الشعار ليظهر بشكل أفضل */
-            height: auto; /* الحفاظ على النسبة بين العرض والارتفاع */
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%; /* لجعل الشعار يتكيف مع عرض الشاشة */
+            height: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
         }
         p {
             font-size: 16px;
@@ -72,6 +71,7 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap; /* لضمان ظهور الأزرار في أكثر من سطر عند صغر الشاشة */
         }
         .social-icons a {
             text-decoration: none;
@@ -81,6 +81,8 @@
             border-radius: 8px;
             display: inline-block;
             transition: background-color 0.3s ease;
+            flex-grow: 1; /* لجعل الأزرار تتوسع لملء المساحة المتاحة */
+            max-width: 150px; /* لتحديد حجم أقصى للأزرار */
         }
         .social-icons a:hover {
             background-color: #0056b3;
