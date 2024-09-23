@@ -22,7 +22,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             max-width: 600px;
             width: 100%;
-            text-align: center;
+            text-align: center; /* لتوسيط جميع العناصر داخل الـ container */
         }
         h1 {
             font-size: 28px;
@@ -31,9 +31,11 @@
             border-bottom: 2px solid #ffcc00;
             display: inline-block;
             padding-bottom: 10px;
+            text-align: center; /* توسيط العنوان */
+            width: 100%; /* لضمان أن العنوان يغطي العرض بالكامل */
         }
         img {
-            max-width: 150px;
+            max-width: 200px; /* تكبير الشعار */
             margin-bottom: 20px;
         }
         p {
@@ -86,8 +88,8 @@
 <body>
 
 <div class="container">
-    <!-- إضافة صورة الشعار هنا -->
-    <img src="https://github.com/mahmoud7532000/german-home-academy/blob/main/20230503_183849.png" alt="German Home Academy Logo">
+    <!-- الشعار مع زيادة الحجم -->
+    <img src="https://github.com/mahmoud7532000/german-home-academy/raw/main/20230503_183849.png" alt="German Home Academy Logo">
 
     <h1>German Home Academy 🇩🇪</h1>
     <p>مرحبًا بكم في الأكاديمية الألمانية، نحن هنا لمساعدتكم في كل ما يتعلق بتعلم اللغة الألمانية وتقديم كافة المعلومات الضرورية للتعلم بطريقة فعّالة.</p>
