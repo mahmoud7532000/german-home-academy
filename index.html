@@ -66,6 +66,7 @@
         .contact-info .ltr {
             direction: ltr;
             text-align: left;
+            white-space: nowrap; /* لمنع التفاف النص */
         }
         .social-icons {
             display: flex;
@@ -115,13 +116,14 @@
 
     <div class="contact-info">
         <!-- تعديل النص الخاص بالواتساب ليصبح مثل باقي الروابط -->
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/201019849366" target="_blank">Academy Number</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/201019849366" target="_blank">Join WhatsApp</a></p>
         <p><strong>WhatsApp Group:</strong> <a href="https://chat.whatsapp.com/KQkj8jXhFyMDTflEGjzb09" target="_blank">Join WhatsApp Group</a></p>
         <p><strong>Facebook Page:</strong> <a href="https://www.facebook.com/profile.php?id=100069328328501" target="_blank">Visit Facebook Page</a></p>
         <p><strong>Facebook Group:</strong> <a href="https://www.facebook.com/groups/349494759643869/?ref=share&mibextid=NSMWBT" target="_blank">Join Facebook Group</a></p>
         <p><strong>Telegram Group:</strong> <a href="https://t.me/germanhome" target="_blank">Join Telegram Group</a></p>
         <p><strong>Telegram Group (2):</strong> <a href="https://t.me/germanhomee" target="_blank">Join Telegram Group 2</a></p>
-        <p class="ltr"><strong>Academy Address:</strong> <a href="https://maps.app.goo.gl/7wHo7fB3SV7s9Cc69" target="_blank">Find us on Google Maps</a><br> (بني سويف - شارع المدارس - برج الحسام)</p>
+        <!-- تعديل اتجاه Academy Address ليكون من اليسار إلى اليمين وجعل النص في سطر واحد -->
+        <p class="ltr"><strong>Academy Address:</strong> <a href="https://maps.app.goo.gl/7wHo7fB3SV7s9Cc69" target="_blank">Find us on Google Maps</a> (بني سويف - شارع المدارس - برج الحسام)</p>
     </div>
 
     <div class="social-icons">
