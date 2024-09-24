@@ -63,43 +63,6 @@
         .contact-info p {
             margin: 8px 0;
         }
-        .contact-info .ltr {
-            direction: ltr;
-            text-align: left;
-            white-space: nowrap;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-        .social-icons a {
-            text-decoration: none;
-            color: #fff;
-            padding: 10px 15px;
-            border-radius: 8px;
-            display: inline-block;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            flex-grow: 1;
-            max-width: 150px;
-            text-align: center;
-            line-height: 1.5;
-            border: 2px solid #fff; /* حدود بيضاء مرئية */
-        }
-        .social-icons a[href*="whatsapp"] {
-            background-color: #25d366; /* لون واتساب */
-        }
-        .social-icons a[href*="facebook"] {
-            background-color: #3b5998; /* لون فيسبوك */
-        }
-        .social-icons a[href*="telegram"] {
-            background-color: #0088cc; /* لون تيليجرام */
-        }
-        .social-icons a:hover {
-            opacity: 0.8;
-        }
         .footer {
             margin-top: 35px;
             font-size: 14px;
@@ -111,11 +74,6 @@
         @media (max-width: 600px) {
             p, a {
                 font-size: 14px;
-            }
-            .social-icons a {
-                flex-grow: unset;
-                width: 100%;
-                margin-bottom: 10px;
             }
         }
     </style>
@@ -130,7 +88,7 @@
     <p>أهلاً بيكم في German Home Academy! إحنا هنا علشان نساعدكم تتعلموا اللغة الألمانية بطريقة سهلة جدًا وفعّالة. تقدروا تتواصلوا معانا مباشرة من خلال الروابط اللي تحت وتشاركونا في مجموعات الواتساب والتليجرام عشان تستفيدوا من كل جديد.</p>
 
     <div class="contact-info">
-        <!-- تعديل النص الخاص بالواتساب ليصبح مثل باقي الروابط -->
+        <!-- روابط التواصل -->
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/201019849366" target="_blank" rel="noopener noreferrer">Join WhatsApp</a></p>
         <p><strong>WhatsApp Group:</strong> <a href="https://chat.whatsapp.com/KQkj8jXhFyMDTflEGjzb09" target="_blank" rel="noopener noreferrer">Join WhatsApp Group</a></p>
         <p><strong>Facebook Page:</strong> <a href="https://www.facebook.com/profile.php?id=100069328328501" target="_blank" rel="noopener noreferrer">Visit Facebook Page</a></p>
@@ -139,12 +97,6 @@
         <p><strong>Telegram Group (2):</strong> <a href="https://t.me/germanhomee" target="_blank" rel="noopener noreferrer">Join Telegram Group 2</a></p>
         <p><strong>Academy Address:</strong> <a href="https://maps.app.goo.gl/7wHo7fB3SV7s9Cc69" target="_blank" rel="noopener noreferrer">Find us on Google Maps</a></p>
         <p>(بني سويف - شارع المدارس - برج الحسام)</p>
-    </div>
-
-    <div class="social-icons">
-        <a href="https://wa.me/201019849366" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <a href="https://www.facebook.com/profile.php?id=100069328328501" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://t.me/germanhome" target="_blank" rel="noopener noreferrer">Telegram</a>
     </div>
 
     <div class="footer">
